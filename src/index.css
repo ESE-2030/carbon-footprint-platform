@@ -304,6 +304,107 @@ main {
     display: none;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .navbar-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navbar-actions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-actions .btn-primary {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Main Content */
+    main {
+        padding: 1rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+    }
+
+    /* Grids */
+    .about-grid,
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .feature-card {
+        border-right: none;
+        border-bottom: 4px solid var(--primary-green);
+    }
+
+    /* Dashboard Specific */
+    .dashboard-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .summary-card .value {
+        font-size: 2.5rem !important;
+    }
+
+    .dashboard-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dashboard-actions button,
+    .dashboard-actions a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Calculator Specific */
+    .calculator-container {
+        padding: 1rem !important;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
+
 /* Print Styles */
 @media print {
     @page {
