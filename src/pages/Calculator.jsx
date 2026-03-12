@@ -73,8 +73,8 @@ const Calculator = () => {
     };
 
     return (
-        <div className="calculator-page section-padding">
-            <div className="container" style={{ maxWidth: '800px' }}>
+        <div className="calculator-page section-padding" style={{ width: '100%' }}>
+            <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
                 <div className="section-header text-center">
                     <h2>حساب البصمة الكربونية</h2>
                     <div className="divider"></div>

@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                    <img src={logoImage} alt="ESE Logo" style={{ height: '40px', objectFit: 'contain' }} />
+                    <img src={logoImage} alt="ESE Logo" style={{ height: '60px', objectFit: 'contain' }} />
                 </Link>
                 <ul className="navbar-menu">
                     <li><Link to="/">الرئيسية</Link></li>
