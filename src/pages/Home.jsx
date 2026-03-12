@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -11,8 +12,8 @@ const Home = () => {
                         منصة "مهندسون من أجل مصر المستدامة" تقدم لك أداة دقيقة لحساب الانبعاثات الكربونية وتقارير استدامة معتمدة تتماشى مع رؤية مصر 2030.
                     </p>
                     <div className="hero-buttons">
-                        <button className="btn-primary lg">ابدأ حساب البصمة الكربونية</button>
-                        <button className="btn-secondary lg">تعرف على خدماتنا</button>
+                        <Link to="/calculator" className="btn-primary lg">ابدأ حساب البصمة الكربونية</Link>
+                        <Link to="/services" className="btn-secondary lg">تعرف على خدماتنا</Link>
                     </div>
                 </div>
             </section>
